@@ -1,0 +1,68 @@
+/* Comment trong css */
+body {
+  background-color: blueviolet;
+  color: #ffffff;
+}
+
+/* Select Id (#) */
+#title {
+  color: blue;
+}
+
+/* Select Class (.) */
+.title2 {
+  color: magenta;
+}
+.textRed {
+  color: red;
+}
+.textBlue {
+  color: blue;
+}
+.color {
+  position: relative;
+}
+
+.color:first-child {
+  position: absolute;
+  top: 30px;
+}
+
+hgroup > * {
+  color: orange;
+  text-align: right;
+  /* text-decoration-line: underline;
+  text-decoration-color: aqua;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 5px; */
+  text-decoration: underline aqua dotted 5px;
+  text-transform: uppercase;
+  /* text-indent: 50px;   */
+}
+
+p.indent {
+  text-indent: 120px;
+  font-family: "Times New Roman",sans-serif;
+  font-size: 24px;
+  font-variant: unset;
+  border-style: dotted;
+  border-color: black;
+  border-width: 10px;
+  padding: 5px 10px 15px 20px;
+  height: 500px;
+  width: 800px;
+  position: relative;
+left: 30px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: yellow;
+}

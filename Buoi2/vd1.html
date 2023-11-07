@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thực hành về các thẻ định dạng</title>
+    <style>
+      /* Internal */
+      body{
+        background-color: antiquewhite;
+        color: red;
+      }
+      </style>
+      <!-- External -->
+      <link rel="stylesheet" href="./Sesion3.css">
   </head>
-  <body>
+  <body 
+  
+  >
     <hgroup>
-      <h1>1.1 Tiêu đề lớn thứ 1</h1>
-      <h2>1.2 Tiêu đề lớn thứ 2</h2>
+      <h1 id="title">1.1 Tiêu đề lớn thứ 1</h1>
+      <h2 class="title2">1.2 Tiêu đề lớn thứ 2</h2>
       <h3>1.3 Tiêu đề lớn thứ 3</h3>
       <h4>1.4 Tiêu đề lớn thứ 4</h4>
       <h5>1.5 Tiêu đề lớn thứ 5</h5>
@@ -17,7 +28,7 @@
     <hr />
     <hgroup>
       <h1>2.1 Tiêu đề lớn thứ 1</h1>
-      <h2>2.2 Tiêu đề lớn thứ 2</h2>
+      <h2 class="title2">2.2 Tiêu đề lớn thứ 2</h2>
       <h3>2.3 Tiêu đề lớn thứ 3</h3>
       <h4>2.4 Tiêu đề lớn thứ 4</h4>
       <h5>2.5 Tiêu đề lớn thứ 5</h5>
@@ -33,12 +44,12 @@
     <p><small>Chữ nhỏ</small></p>
     <p>
       <small
-        ><b><u>Chữ nhỏ in đậm (giống thẻ h5)</u></b></small
+      ><b><u>Chữ nhỏ in đậm (giống thẻ h5)</u></b></small
       >
     </p>
     <p>
       <u
-        ><small><b>Chữ nhỏ in đậm cách 2</b></small></u
+      ><small><b>Chữ nhỏ in đậm cách 2</b></small></u
       >
     </p>
     <hr />
@@ -52,7 +63,7 @@
     <p>Đoạn văn <def>#def</def></p>
     <p>Đoạn văn <samp>#samp</samp></p>
     <p>Đoạn văn <cite>#cite</cite></p>
-    <p>Đoạn văn <blockquote>Ghi chú dạng blockquote</blockquote></p>
+    <p>Đoạn văn <blockquote>Ghi chú dạng blockquote</blockquote>
     <hr>
     <h1>Danh sách có thứ tự các môn học của SEM 1</h1>
     <ol style="list-style-type: lower-roman;">
@@ -74,7 +85,7 @@
         <li>Lập trình PHP</li>
         <li>SQL</li>
         <li>Đồ án môn học</li>
-    </ol>
+    </ul>
 
     <hr>
     <h1>Danh sách tự định nghĩa các môn học của SEM 1</h1>
@@ -87,11 +98,16 @@
         <dt>SQL</dt>
         <dt>Đồ án môn học</dt>
     </dl>
-
+    <p class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nostrum distinctio autem fugiat. Saepe dolores exercitationem ab officiis perferendis numquam error mollitia repellat. Minus ab facere molestiae praesentium recusandae amet quos ad nisi! Accusantium ducimus, inventore voluptatibus provident consectetur assumenda natus blanditiis exercitationem eos alias dicta ullam impedit repellendus nostrum molestiae, vitae qui eius unde neque, soluta facilis veniam maiores! Eveniet labore, fuga saepe reiciendis enim voluptatum, eos dolore totam doloribus asperiores rerum mollitia hic. Itaque culpa est repudiandae iure alias laborum quisquam, in officia doloribus, voluptatibus rerum. Assumenda suscipit dolorum accusamus exercitationem eius recusandae iste sint facilis, sapiente alias quasi pariatur? Vitae eligendi enim ipsum nostrum illo consequuntur eum, illum, dolorum repellat soluta impedit culpa perspiciatis nulla autem molestiae.</p>
     <hr>
     <h1>Thẻ liên kết</h1>
     <p><a href="https://kase.edu.vn/" target="_">Trang web của KASE</a></p>
-    <p><a href="./Session1.html" target="_blank">Bài thực hành số 1</a></p>
+    <p><a href="./vd1.html" target="_blank">Bài thực hành số 1</a></p>
     <p><a href="mailto:admin@kase.com">Gửi mail về cho chúng tôi</a></p>
-  </body>
+
+    <div class="color">
+        <p>Màu yêu thích của tôi là màu <span class="textRed">đỏ</span></p>
+        <p>Màu yêu thích của tôi là màu <span class="textBlue">xanh</span></p>
+    </div>
+    </body>
 </html>
