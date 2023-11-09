@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout bố cục trang web bằng float</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>Phần đầu của trang web</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chu</a></li>
+            <li><a href="#">Tin tuc</a></li>
+            <li><a href="#">Lien he</a></li>
+            <li><a href="#">Gioi thieu</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>Nội dung của trang web</div>
+        <div class="card">
+            <form action="#">
+                <p>Mẫu thu thập thông tin</p>
+                <label>Họ tên</label>
+                <input type="text" name="" id=""> <br>
+                <label>Email</label>
+                <input type="email" name="" id=""> <br>
+                <label>So tuoi</label>
+                <input type="number" name="" id=""> <br>
+                <label>Date</label>
+                <input type="date" name="" id=""> <br>
+                <label>Có phải là nhân viên?</label> <br>
+                <input type="radio" name="nhanvien" id="" value="Đúng"> Đúng <br>
+                <input type="radio" name="nhanvien" id="" value="Sai"> Sai <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="card">
+            <form>
+                <p>Biểu mẫu xử lý trạng thái</p><br>
+                Trạng thái sử lý.<br>
+                <progress max="100" value="35">
+            </form>
+        </div>
+        <div class="card">
+            <p>Danh sách sinh viên lớp ACCP</p>
+            <table border="1">
+<!--                Tiêu đề-->
+                <tr>
+                    <th>No</th>
+                    <th>Họ tên</th>
+                    <th>Giới tính</th>
+                    <th>Năm sinh</th>
+                </tr>
+<!--                Dữ liệu-->
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>Nam</td>
+                    <td>2002</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card">
+            <p>Danh sách sinh viên lớp ACCP</p>
+            <table border="1">
+                <!--                Tiêu đề-->
+                <tr>
+                    <td>No</td>
+                    <td>Họ tên</td>
+                    <td>Giới tính</td>
+                    <td>Năm sinh</td>
+                </tr>
+                <!--                Dữ liệu-->
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td rowspan="2">Nam</td>
+                    <td>2002</td>
+                </tr> <tr>
+                    <td>2</td>
+                    <td>Nguyễn Văn B</td>
+<!--                    <td>Nam</td>-->
+                    <td>2001</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <aside>
+        <div>Danh mục nội dung của trang web</div>
+    </aside>
+    <footer>
+        <div>Phần cuối của trang web</div>
+    </footer>
+</body>
+</html>

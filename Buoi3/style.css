@@ -1,0 +1,94 @@
+*{
+    font-size: 24px;
+    line-height: 36px;
+    /*text-align: center;*/
+}
+
+body {
+   background-color: teal;
+}
+
+header, nav, section, aside, footer {
+    float: right;
+    width: 100%;
+}
+
+header {
+    background-color: blue;
+    min-height: 80px;
+}
+
+nav {
+    background-color: brown;
+    min-height: 16px;
+}
+section {
+   background-color: #ffc670;
+    width: 80%;
+    min-height: 500px;
+}
+.card {
+    float: left;
+    width: 47%;
+    height: 500px;
+    border-style: solid;
+    border-color: chartreuse;
+    border-width: 2px;
+    margin: 5px;
+    border-radius: 20px;
+    /*box-sizing: border-box;*/
+}
+
+aside {
+   background-color: pink;
+    width: 20%;
+    min-height: 500px;
+}
+
+footer {
+  background-color: yellow;
+    min-height: 26px;
+}
+ul {
+    list-style-type: none;
+}
+
+ul>li {
+    display: inline;
+    border-right: 2px solid #333;
+    padding: 1px 5px 1px 10px;
+
+}
+
+li>a {
+    text-decoration: none;
+}
+
+form {
+    margin: 24px;
+}
+form > p {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+form label {
+    min-width: 80px;
+    display: inline-block;
+}
+
+input[type=radio]{
+    font-size: 36px;
+}
+table {
+    text-align: center;
+}
+table tr{
+    vertical-align: top;
+}
+table td {
+    padding: 24px;
+}
+table tr:first-child td {
+    font-weight: bold;
+}
