@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<p>Ứng dụng sử lý toán học</p>
+<p>Thực hiện phép toán cộng 2 số</p>
+<lab>Nhập số thứ 1</lab>
+<input id="num1" type="number" onchange="inputNum1()"><br>
+<lab>Nhập số thứ 2</lab>
+<input id="num2" type="text" onchange="inputNum2()">
+    <div id="demo"></div>
+    <div id="result"></div>
+
+    <script type="text/javascript">
+        // let a=5;
+        // var b=6;
+        // let c=a+b;
+        //In kết quả vào thẻ console.
+        // console.log(c);
+        //Ghi vào thẻ body bằng hàm write().
+        // document.write(c);
+        //Ghi kết quả vào 1 thẻ cụ thể (id.)
+        // document.getElementById("demo").innerHTML = c;
+        //Ghi kết quả vào hộp thoại Alert;
+        // window.alert(c);
+
+        function inputNum1(){
+           //Xử lý khi nhập xong số 1 -> tính tổng 2 số.
+            sum();
+        }
+
+        function inputNum2(){
+            //Xử lý khi nhập xong số 2 -> tính tổng 2 số.
+            sum();
+        }
+
+        function sum(){
+            let a = document.getElementById("num1").value;
+            let b = document.getElementById("num2").value;
+            //Kiểm tra giá trị hợp lệ trước khi tính toán;
+            if( b == "" || isNaN(b)){
+                document.getElementById("result").innerHTML= "Số thứ 2 không phải là 1 số";
+            } else {
+                c =parseFloat(a)+ parseFloat(b);
+                document.getElementById("result").innerHTML = `${a} + ${b} =  ${c}`;
+            }
+        }
+    </script>
+</html>
