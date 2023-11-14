@@ -9,6 +9,8 @@
 
 </head>
 <body>
+<div id="welcome"> Xin chao ban</div>
+
 <p>Ứng dụng sử lý toán học</p>
 <p>Thực hiện phép toán cộng 2 số</p>
 <lab>Nhập số thứ 1</lab>
@@ -17,6 +19,8 @@
 <input id="num2" type="text" onchange="inputNum2()">
     <div id="demo"></div>
     <div id="result"></div>
+<hr>
+<button onclick="fnConfirm()"> Test Confirm</button>
 
     <script type="text/javascript">
         // let a=5;
@@ -30,6 +34,7 @@
         // document.getElementById("demo").innerHTML = c;
         //Ghi kết quả vào hộp thoại Alert;
         // window.alert(c);
+
 
         function inputNum1(){
            //Xử lý khi nhập xong số 1 -> tính tổng 2 số.
@@ -52,5 +57,31 @@
                 document.getElementById("result").innerHTML = `${a} + ${b} =  ${c}`;
             }
         }
+
+        function fnConfirm(){
+            if(confirm("Ban co muon thuc hien phep tinh cong")){
+                console.log(true);
+            } else {
+                console.log(false);
+            }
+
+        }
+
+        var name = prompt("What is you name", "I am ....")
+        document.getElementById("welcome").innerText = "Xin chao ban " + `<h1> ${name} </h1>`;
+
+        /*
+        * sự kiện on focus và out focus cho thẻ input
+        * Sử dụng add event bằng addEventListener.
+        */
+        document.getElementById("num1").addEventListener("focus",function (){ HandleonFocus(this) });
+        document.getElementById("num1").addEventListener("focusout",function (){ HandleoutFocus(this) });
+        function HandleonFocus(item){
+            item.style.backgroundColor = "teal";
+        }
+        function HandleoutFocus(item){
+            item.style.backgroundColor = "transparent";
+        }
     </script>
+</body>
 </html>
