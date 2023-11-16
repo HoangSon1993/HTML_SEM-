@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./object.js"></script>
+</head>
+<body>
+<div id="welcome"></div>
+
+<script>
+    /**
+     * Đôi tượng
+     *      thuộc tính: Biến
+     *      Chức năng: Hàm (function)
+     */
+
+
+    /**
+     * Khởi tạo 1 đối tượng student bằng từ khoá "new"
+     * new Object() -> Tạo đôi tượng trống, các thuộc tính (prorerty) đều là chưa có (null) hooặc trống (empty).
+     */
+
+   // let student = new Object();
+   // student.name = prompt("Bạn tên là gì", "Tên của bạn: ");
+   // student.age = prompt("Tuổi của bạn ?", "Nhập số:");
+   // //Kiem tra tinh hop le cua tuoi
+   //  for(;isNaN(student.age);){
+   //      if (isNaN(student.age)){
+   //          student.age = prompt("Bạn nhập tuổi không hợp lệ?", "Vui lòng nhập 1 số....");
+   //      }
+   //  }
+   //  document.getElementById("welcome").innerHTML = "Ten cua ban la " + student.name + "<br>" + " tuoi cua ban la: " + student.age;
+
+//     -------------------------------------------
+    let student = new Student("SV001", "Nguyen Van A", 20);
+    let student2 = new Student("SV002", "Nguyen Van B", 21);
+    student.input = function (){
+        inputStudent(this);
+    }
+    student2.input = function (){
+        inputStudent(this);
+    }
+
+    student.output = function(){
+        return outputStudent(this);
+    };
+    student2.output = function(){
+        return outputStudent(this);
+    };
+    document.getElementById("welcome").innerHTML =  student.output = function(){
+        return outputStudent(this);
+    };
+</script>
+</body>
+</html>
